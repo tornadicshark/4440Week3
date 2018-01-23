@@ -1,0 +1,50 @@
+/* LESS Document */
+
+@primaryColor: #3F3F3F;
+@secondaryColor: #d8d8d8;
+
+body {
+	background-color: @secondaryColor;
+	color: black;
+}
+
+.container {
+	margin: 0 auto;
+	width: 50%;
+	background-color: white;
+	border: 2px solid @primaryColor;
+	text-align:center;
+	overflow: auto;
+}
+
+.spongebob {
+	background-image: url('https://vignette.wikia.nocookie.net/vsbattles/images/d/dd/2015-07-14-1436902565-6235018-SpongeBob_5.png/revision/latest?cb=20150919161402');
+	background-position: center;
+	background-size:contain;
+	background-repeat:no-repeat;
+	width:30%;
+	min-height:200px;
+	float:left;
+	overflow: none;
+	margin: 0 auto;
+	padding: 3px;
+	margin: .5em;
+}
+
+.spongebob:hover {
+	background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png');
+}
+
+.popup {
+	visibility: hidden;
+	display:inline-block;
+	background-color: @secondaryColor;
+	color: white;
+	float:right;
+	width: 50%;
+	//min-width:200px;
+	overflow: none;
+	margin: .5em;
+	padding: 2.5em 0;
+	border: 2px solid @primaryColor;
+}
